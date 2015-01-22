@@ -3,7 +3,7 @@ imgr[0] = "http://2.bp.blogspot.com/-ex3V86fj4dQ/UrCQQa4cLsI/AAAAAAAAFdA/j2FCTmG
 showRandomImg = true;
 aBold = true;
 summaryPost = 400;
-summaryTitle = 20;
+summaryTitle = 30;
 numposts1 = 12;
 numposts2 = 4;
 
@@ -73,7 +73,7 @@ function showrecentposts1(json) {
         var daystr = day + ' ' + m + ' ' + y;
         pcm = '<a href="' + posturl + '">' + pcm + ' comments</a>';
         var srcimg = img[i];
-        var newimg = srcimg.replace("s1600", "s200");
+        var newimg = srcimg.replace("s1600", "h104-w132-c");
         var trtd = '<div class="col_maskolis"><h2 class="posttitle"><a href="' + posturl + '">' + posttitle + '</a></h2><a href="' + posturl + '"><img class="related_img" src="' + newimg + '"/></a><div class="clear"></div></div>';
         document.write(trtd);
         j++
@@ -153,7 +153,7 @@ function printRelatedLabels_thumbs() {
         if (i != 0) document.write('"');
         else document.write('"');
         var srcimg = thumburl[r];
-        var newimg = srcimg.replace("s1600", "s200");
+        var newimg = srcimg.replace("s1600", "h104-w132-c");
         document.write(' href="' + relatedUrls[r] + '"><img class="related_img" src="' + newimg + '"/><br/><div id="related-title">' + relatedTitles[r] + '</div></a>');
         if (r < relatedTitles.length - 1) {
             r++
