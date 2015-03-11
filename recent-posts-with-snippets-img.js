@@ -50,7 +50,7 @@ function showrecentposts_img(json) {
     else var postcontent = "";
     var re = /<\S[^>]*>/g; 
     postcontent = postcontent.replace(re, "");
- document.write('<div class="postw clearfix"><div class="posti">');
+ document.write('<div class="postw"><div class="posti">');
  document.write(item);
  document.write('</div><div class="tsw"><div class="mtrpw">');
     document.write(posttitle);
