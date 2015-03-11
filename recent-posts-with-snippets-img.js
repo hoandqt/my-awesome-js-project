@@ -1,8 +1,8 @@
 // ----------------------------------------
 // SHOW RECENT POSTS
 // ----------------------------------------
-// Mod by MyDigitalLemon
-// Original by blogsolute.com
+// Mod by MyDigitalLemon | Edit by Hoa Dang Nguyen
+// Original by blogsolute.com | blogsudo.com
 // ----------------------------------------
 
 function showrecentposts_img(json) {
@@ -11,6 +11,10 @@ function showrecentposts_img(json) {
     var entry = json.feed.entry[i];
     var posttitle = entry.title.$t;
     var posturl;
+    var orgImgUrl = entry.media$thumbnail ? entry.media$thumbnail.url : 'https://lh3.googleusercontent.com/-WSAcJKxDAy4/VQBEpcN5lgI/AAAAAAAAIxk/Z0JdkyF5CdE/s264/default-no-image.png';
+    var newImgUrl = orgImgUrl.replace('s72-c', 's' + bsrpg_thumbSize + '-c');
+    var imgTag = '&lt;img src=&quot;' + newImgUrl + '&quot; width=&quot;' + bsrpg_thumbSize + '&quot; height=&quot;' + bsrpg_thumbSize + '&quot;/&gt;';
+    var item = '&lt;a href=&quot;' + posturl + '&quot; title=&quot;' + posttitle + '&quot;&gt;' + imgTag + '&lt;/a&gt;';
     if (i == json.feed.entry.length) break;
     for (var k = 0; k < entry.link.length; k++) {
       if (entry.link[k].rel == 'alternate') {
@@ -46,7 +50,9 @@ function showrecentposts_img(json) {
     else var postcontent = "";
     var re = /<\S[^>]*>/g; 
     postcontent = postcontent.replace(re, "");
- document.write('<div class="mtrpw">');
+ document.write('<div class="postw"><div class="posti">');
+ document.write(item);
+ document.write('</div><div class="tsw"><div class="mtrpw">');
     if (standardstyling_img) document.write('<br/>');
     document.write(posttitle);
     if (showpostdate_img == true) document.write(' - ' + monthnames[parseInt(cdmonth,10)] + ' ' + cdday + ' ' + cdyear);
@@ -65,7 +71,7 @@ function showrecentposts_img(json) {
          document.write(postcontent + ' ' + readmorelink);
          if (standardstyling_img) document.write('');}
 }
- document.write('</div>');
+ document.write('</div></div></div>');
     if (standardstyling_img) document.write('');
 }
 if (!standardstyling_img) document.write('<div class="bbwidgetfooter">');
