@@ -53,7 +53,6 @@ function showrecentposts_img(json) {
  document.write('<div class="postw"><div class="posti">');
  document.write(item);
  document.write('</div><div class="tsw"><div class="mtrpw">');
-    if (standardstyling_img) document.write('<br/>');
     document.write(posttitle);
     if (showpostdate_img == true) document.write(' - ' + monthnames[parseInt(cdmonth,10)] + ' ' + cdday + ' ' + cdyear);
  document.write('</div><div class="mtrpwsumm">');
