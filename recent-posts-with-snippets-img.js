@@ -13,8 +13,7 @@ function showrecentposts_img(json) {
     var posturl;
     var orgImgUrl = entry.media$thumbnail ? entry.media$thumbnail.url : 'https://lh3.googleusercontent.com/-WSAcJKxDAy4/VQBEpcN5lgI/AAAAAAAAIxk/Z0JdkyF5CdE/s264/default-no-image.png';
     var newImgUrl = orgImgUrl.replace('s72-c', 's' + bsrpg_thumbSize + '-c');
-    var imgTag = '&lt;img src=&quot;' + newImgUrl + '&quot; width=&quot;' + bsrpg_thumbSize + '&quot; height=&quot;' + bsrpg_thumbSize + '&quot;/&gt;';
-    var item = '&lt;a href=&quot;' + posturl + '&quot; title=&quot;' + posttitle + '&quot;&gt;' + imgTag + '&lt;/a&gt;';
+    var imgTag = '<img src="' + newImgUrl + '" width="' + bsrpg_thumbSize + '" height="' + bsrpg_thumbSize + '">';
     if (i == json.feed.entry.length) break;
     for (var k = 0; k < entry.link.length; k++) {
       if (entry.link[k].rel == 'alternate') {
@@ -22,6 +21,7 @@ function showrecentposts_img(json) {
         break;
       }
     }
+    var item = '<a href="' + posturl + '" title="' + posttitle + '">' + imgTag + '</a>';
     posttitle = posttitle.link(posturl);
     var readmorelink = "....";
     readmorelink = readmorelink.link(posturl);
