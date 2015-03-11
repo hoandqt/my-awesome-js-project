@@ -7,7 +7,7 @@
 
 function showrecentposts_img(json) {
 
-  for (var i = 0; i < numposts; i++) {
+  for (var i = 0; i < numposts_img; i++) {
     var entry = json.feed.entry[i];
     var posttitle = entry.title.$t;
     var posturl;
@@ -47,30 +47,30 @@ function showrecentposts_img(json) {
     var re = /<\S[^>]*>/g; 
     postcontent = postcontent.replace(re, "");
  document.write('<div class="mtrpw">');
-    if (standardstyling) document.write('<br/>');
+    if (standardstyling_img) document.write('<br/>');
     document.write(posttitle);
-    if (showpostdate == true) document.write(' - ' + monthnames[parseInt(cdmonth,10)] + ' ' + cdday + ' ' + cdyear);
+    if (showpostdate_img == true) document.write(' - ' + monthnames[parseInt(cdmonth,10)] + ' ' + cdday + ' ' + cdyear);
  document.write('</div><div class="mtrpwsumm">');
-    if (showpostsummary == true) {
-      if (standardstyling) document.write('');
-      if (postcontent.length < numchars) {
-         if (standardstyling) document.write('<i>');
+    if (showpostsummary_img == true) {
+      if (standardstyling_img) document.write('');
+      if (postcontent.length < numchars_img) {
+         if (standardstyling_img) document.write('<i>');
          document.write(postcontent);
-         if (standardstyling) document.write('</i>');}
+         if (standardstyling_img) document.write('</i>');}
       else {
-         if (standardstyling) document.write('');
-         postcontent = postcontent.substring(0, numchars);
+         if (standardstyling_img) document.write('');
+         postcontent = postcontent.substring(0, numchars_img);
          var quoteEnd = postcontent.lastIndexOf(" ");
          postcontent = postcontent.substring(0,quoteEnd);
          document.write(postcontent + ' ' + readmorelink);
-         if (standardstyling) document.write('');}
+         if (standardstyling_img) document.write('');}
 }
  document.write('</div>');
-    if (standardstyling) document.write('');
+    if (standardstyling_img) document.write('');
 }
-if (!standardstyling) document.write('<div class="bbwidgetfooter">');
-if (standardstyling) document.write('');
+if (!standardstyling_img) document.write('<div class="bbwidgetfooter">');
+if (standardstyling_img) document.write('');
 document.write('');
-if (!standardstyling) document.write('');
+if (!standardstyling_img) document.write('');
 
 }
