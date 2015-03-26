@@ -6,7 +6,7 @@
 // ----------------------------------------
 function showrecentposts_img_www(json) {
   for (var i = 0; i < numposts_img; i++) {
-    first_part(json,i);
+    var details = first_part(json,i);
     var container = document.getElementById('www-img'); 
     last_part(details);
   }
