@@ -15,7 +15,15 @@ function showrecentposts(json) {
         }
     }
     posttitle = posttitle.link(posturl);
-    var container = document.getElementById(cat); 
+    if (typeof cat == 'doisong') {
+      var container = document.getElementById('doisong'); 
+    }
+    else if (typeof cat == 'dulich') {
+      var container = document.getElementById('dulich'); 
+    }
+    else {
+      var container = document.getElementById('suckhoe'); 
+    }
     var div = document.createElement("div");
     div.className = "bbrecpost2";
     var span = document.createElement("span");
