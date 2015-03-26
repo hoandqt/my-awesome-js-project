@@ -4,7 +4,7 @@
 // Mod by MyDigitalLemon | Edit by Hoa Dang Nguyen
 // Original by blogsolute.com | blogsudo.com
 // ----------------------------------------
-function showrecentposts_img(json) {
+function showrecentposts_img_www(json) {
   for (var i = 0; i < numposts_img; i++) {
     var entry = json.feed.entry[i];
     var posttitle = entry.title.$t;
