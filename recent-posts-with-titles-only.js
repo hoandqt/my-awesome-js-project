@@ -2,7 +2,7 @@
 // SHOW RECENT POSTS 2 
 // ----------------------------------------
 function showrecentposts(json) {
-if (www == 'www') {
+//if (www == 'www') {
   for (var i = 0; i < numposts; i++) {
     var entry = json.feed.entry[i];
     var posttitle = entry.title.$t;
@@ -16,7 +16,7 @@ if (www == 'www') {
     }
     posttitle = posttitle.link(posturl);
     
-    var container = document.getElementById('www'); 
+    var container = document.getElementById(cat); 
 
     var div = document.createElement("div");
     div.className = "bbrecpost2";
@@ -25,5 +25,5 @@ if (www == 'www') {
     div.appendChild(span);
     container.appendChild(div);
   }
-}
+//}
 }
