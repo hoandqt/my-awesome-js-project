@@ -3,7 +3,7 @@
 // ----------------------------------------
 function showrecentposts(json) {
   numposts = json.feed.entry.length;
-  for (var i = 0; i < json.feed.openSearch$itemsPerPage[$t]; i++) {
+  for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('hlrpsb'); 
     title_last_part(posttitle,container);
