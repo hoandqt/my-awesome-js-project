@@ -15,11 +15,11 @@ function showrecentposts(json) {
         }
     }
     posttitle = posttitle.link(posturl);
-    if (doisong == 'doisong') {
-      var container = document.getElementById('doisong'); 
+    if (cat == 'www') {
+      var container = document.getElementById('www'); 
     }
-    else if (dulich == 'dulich') {
-      var container = document.getElementById('dulich'); 
+    if (cat == 'chuyenla') {
+      var container = document.getElementById('chuyenla'); 
     }
     var div = document.createElement("div");
     div.className = "bbrecpost2";
