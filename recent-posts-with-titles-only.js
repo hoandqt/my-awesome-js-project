@@ -2,13 +2,14 @@
 // SHOW RECENT POSTS 
 // ----------------------------------------
 function showrecentposts(json) {
-  for (var i = 0; i < numposts; i++) {
+  for (var i = 0; i < json.feed.openSearch$itemsPerPage[$t]; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('hlrpsb'); 
     title_last_part(posttitle,container);
   }
 }
 function showrecentposts_tinthethao(json) { //1
+  numposts = json.feed.openSearch$itemsPerPage[$t];
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('tinthethao'); 
