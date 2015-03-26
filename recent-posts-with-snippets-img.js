@@ -4,6 +4,13 @@
 // Mod by MyDigitalLemon | Edit by Hoa Dang Nguyen
 // Original by blogsolute.com | blogsudo.com
 // ----------------------------------------
+function showrecentposts_img_www(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    first_part(json);
+    var container = document.getElementById('www-img'); 
+    last_part(item,posttitle,postcontent,readmorelink);
+  }
+}
 function first_part(json) {
     var entry = json.feed.entry[i];
     var posttitle = entry.title.$t;
@@ -62,11 +69,4 @@ function last_part(item,posttitle,postcontent,readmorelink) {
     div1.appendChild(div2);
     div1.appendChild(div3);
     container.appendChild(div1);
-}
-function showrecentposts_img_www(json) {
-  for (var i = 0; i < numposts_img; i++) {
-    first_part(json);
-    var container = document.getElementById('www-img'); 
-    last_part(item,posttitle,postcontent,readmorelink);
-  }
 }
