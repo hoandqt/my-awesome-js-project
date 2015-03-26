@@ -4,12 +4,7 @@
 // Mod by MyDigitalLemon | Edit by Hoa Dang Nguyen
 // Original by blogsolute.com | blogsudo.com
 // ----------------------------------------
-// ----------------------------------------
-// SHOW RECENT POSTS
-// ----------------------------------------
-// Mod by MyDigitalLemon | Edit by Hoa Dang Nguyen
-// Original by blogsolute.com | blogsudo.com
-// ----------------------------------------
+
 function showrecentposts_img_www(json) {
   for (var i = 0; i < numposts_img; i++) {
     var details = first_part(json,i);
