@@ -43,18 +43,17 @@ function showrecentposts(json) {
     else var postcontent = "";
     var re = /<\S[^>]*>/g; 
     postcontent = postcontent.replace(re, "");
-    if (!standardstyling) document.write('');
-	document.write('<div class="bbrecpost2">');
+    
+	  document.write('<div class="bbrecpost2">');
     document.write('<span>');
-    if (standardstyling) document.write('');
 
     document.write(posttitle);
-    if (standardstyling) document.write('');
+    
     if (showpostdate == true) document.write(' - ' + cdday + ' ' + monthnames[parseInt(cdmonth,10)] + ' ' + cdyear);
     if (!standardstyling) document.write('<div class="bbrecpostsum"">');
-    if (standardstyling) document.write('');
+    
     if (showpostsummary == true) {
-      if (standardstyling) document.write('');
+      
       if (postcontent.length < numchars) {
          if (standardstyling) document.write('<i>');
          document.write(postcontent);
@@ -70,11 +69,5 @@ function showrecentposts(json) {
     if (!standardstyling) document.write('</div>');
 			 document.write('</span>');
 			document.write('</div>');
-    if (standardstyling) document.write('');
-}
-if (!standardstyling) document.write('<div class="bbwidgetfooter">');
-if (standardstyling) document.write('');
-document.write('');
-if (!standardstyling) document.write('/div');
-
+    
 }
