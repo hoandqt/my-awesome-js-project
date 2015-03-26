@@ -8,7 +8,7 @@ function showrecentposts_img_www(json) {
   for (var i = 0; i < numposts_img; i++) {
     first_part(json,i);
     var container = document.getElementById('www-img'); 
-    last_part(item,posttitle,postcontent,readmorelink);
+    last_part();
   }
 }
 function first_part(json,i) {
@@ -38,7 +38,7 @@ function first_part(json,i) {
     var re = /<\S[^>]*>/g;
     postcontent = postcontent.replace(re, "");
 }
-function last_part(item,posttitle,postcontent,readmorelink) {
+function last_part() {
     var div1 = document.createElement("div");
     div1.className = "postw";
     var div2 = document.createElement("div");
