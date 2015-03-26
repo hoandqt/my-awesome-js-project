@@ -18,7 +18,7 @@ function first_part(json,i) {
     var orgImgUrl = entry.media$thumbnail ? entry.media$thumbnail.url : 'https://lh3.googleusercontent.com/-WSAcJKxDAy4/VQBEpcN5lgI/AAAAAAAAIxk/Z0JdkyF5CdE/s264/default-no-image.png';
     var newImgUrl = orgImgUrl.replace('s72-c', 'w' + bsrpg_thumbSize + '-h' + bsrpg_thumbSize_height + '-c');
     var imgTag = '<img src="' + newImgUrl + '" width="' + bsrpg_thumbSize + '" height="' + bsrpg_thumbSize_height + '">';
-    if (i == json.feed.entry.length) break;
+    if (i == json.feed.entry.length) return;
     for (var k = 0; k < entry.link.length; k++) {
         if (entry.link[k].rel == 'alternate') {
             posturl = entry.link[k].href;
