@@ -2,6 +2,7 @@
 // SHOW RECENT POSTS 
 // ----------------------------------------
 function showrecentposts(json) {
+
   for (var i = 0; i < json.feed.openSearch$itemsPerPage[$t]; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('hlrpsb'); 
@@ -9,7 +10,7 @@ function showrecentposts(json) {
   }
 }
 function showrecentposts_tinthethao(json) { //1
-  numposts = json.feed.openSearch$itemsPerPage[$t];
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('tinthethao'); 
