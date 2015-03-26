@@ -41,7 +41,7 @@ function first_part(json,i) {
     return details;
 }
 function last_part(details) {
-    var item = details[0];, 
+    var item = details[0]; 
     var posttitle = details[1]; 
     var postcontent = details[2]; 
     var readmorelink = details[3];
