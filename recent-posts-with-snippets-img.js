@@ -8,7 +8,7 @@ function showrecentposts_img_www(json) {
   for (var i = 0; i < numposts_img; i++) {
     first_part(json,i);
     var container = document.getElementById('www-img'); 
-    last_part();
+    last_part(details);
   }
 }
 function first_part(json,i) {
@@ -37,8 +37,14 @@ function first_part(json,i) {
     } else var postcontent = "";
     var re = /<\S[^>]*>/g;
     postcontent = postcontent.replace(re, "");
+    var details = [item, posttitle, postcontent, readmorelink];
+    return details;
 }
-function last_part() {
+function last_part(details) {
+    var item = details[0];, 
+    var posttitle = details[1]; 
+    var postcontent = details[2]; 
+    var readmorelink = details[3];
     var div1 = document.createElement("div");
     div1.className = "postw";
     var div2 = document.createElement("div");
