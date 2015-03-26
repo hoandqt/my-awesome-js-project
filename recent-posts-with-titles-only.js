@@ -43,32 +43,32 @@ function showrecentposts(json) {
             var re = /<\S[^>]*>/g;
             postcontent = postcontent.replace(re, "");
 
-             
-            document.write('<div class="bbrecpost2">');
-            document.write('<span>');
+            var container = document.getElementById(cat); 
+            container.innerHTML = '<div class="bbrecpost2">';
+            container.innerHTML += '<span>';
 
-            document.write(posttitle);
+            container.innerHTML += posttitle;
 
-            if (showpostdate == true) document.write(' - ' + cdday + ' ' + monthnames[parseInt(cdmonth, 10)] + ' ' + cdyear);
-            if (!standardstyling) document.write('<div class="bbrecpostsum"">');
+            if (showpostdate == true) container.innerHTML += ' - ' + cdday + ' ' + monthnames[parseInt(cdmonth, 10)] + ' ' + cdyear;
+            if (!standardstyling) container.innerHTML += '<div class="bbrecpostsum"">';
 
             if (showpostsummary == true) {
 
                 if (postcontent.length < numchars) {
-                    if (standardstyling) document.write('<i>');
+                    if (standardstyling) container.innerHTML += '<i>';
                     document.write(postcontent);
-                    if (standardstyling) document.write('</i>');
+                    if (standardstyling) container.innerHTML += '</i>';
                 } else {
-                    if (standardstyling) document.write('<i>');
+                    if (standardstyling) container.innerHTML += '<i>';
                     postcontent = postcontent.substring(0, numchars);
                     var quoteEnd = postcontent.lastIndexOf(" ");
                     postcontent = postcontent.substring(0, quoteEnd);
-                    document.write(postcontent + '... ' + readmorelink);
-                    if (standardstyling) document.write('</i>');
+                    container.innerHTML += postcontent + '... ' + readmorelink;
+                    if (standardstyling) container.innerHTML += '</i>';
                 }
             }
-            if (!standardstyling) document.write('</div>');	
-            document.write('</span>');	
-            document.write('</div>');
+            if (!standardstyling) container.innerHTML += '</div>';	
+            container.innerHTML += '</span>';	
+            container.innerHTML += '</div>';
 
         }
