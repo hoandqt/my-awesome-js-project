@@ -6,12 +6,12 @@
 // ----------------------------------------
 function showrecentposts_img_www(json) {
   for (var i = 0; i < numposts_img; i++) {
-    first_part(json);
+    first_part(json,i);
     var container = document.getElementById('www-img'); 
     last_part(item,posttitle,postcontent,readmorelink);
   }
 }
-function first_part(json) {
+function first_part(json,i) {
     var entry = json.feed.entry[i];
     var posttitle = entry.title.$t;
     var posturl;
