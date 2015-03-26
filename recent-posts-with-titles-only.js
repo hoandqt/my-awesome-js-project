@@ -15,10 +15,10 @@ function showrecentposts(json) {
         }
     }
     posttitle = posttitle.link(posturl);
-    if (typeof doisong == 'doisong') {
+    if (doisong == 'doisong') {
       var container = document.getElementById('doisong'); 
     }
-    else if (typeof dulich == 'dulich') {
+    else if (dulich == 'dulich') {
       var container = document.getElementById('dulich'); 
     }
     var div = document.createElement("div");
