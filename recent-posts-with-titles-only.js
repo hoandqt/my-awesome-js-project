@@ -2,7 +2,7 @@
 // SHOW RECENT POSTS 2 
 // ----------------------------------------
 function showrecentposts(json) {
-
+if (www == 'www') {
   for (var i = 0; i < numposts; i++) {
     var entry = json.feed.entry[i];
     var posttitle = entry.title.$t;
@@ -15,12 +15,9 @@ function showrecentposts(json) {
         }
     }
     posttitle = posttitle.link(posturl);
-    if (cat == 'www') {
-      var container = document.getElementById('www'); 
-    }
-    if (cat == 'chuyenla') {
-      var container = document.getElementById('chuyenla'); 
-    }
+    
+    var container = document.getElementById('www'); 
+
     var div = document.createElement("div");
     div.className = "bbrecpost2";
     var span = document.createElement("span");
@@ -28,4 +25,5 @@ function showrecentposts(json) {
     div.appendChild(span);
     container.appendChild(div);
   }
+}
 }
