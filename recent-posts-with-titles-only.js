@@ -2,7 +2,7 @@
 // SHOW RECENT POSTS 
 // ----------------------------------------
 function showrecentposts(json) {
-
+  numposts = json.feed.entry.length;
   for (var i = 0; i < json.feed.openSearch$itemsPerPage[$t]; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('hlrpsb'); 
@@ -18,6 +18,7 @@ function showrecentposts_tinthethao(json) { //1
   }
 }
 function showrecentposts_giaitri(json) { //2
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('giaitri'); 
@@ -25,6 +26,7 @@ function showrecentposts_giaitri(json) { //2
   }
 }
 function showrecentposts_gaixinh(json) { //3
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('gaixinh'); 
@@ -32,6 +34,7 @@ function showrecentposts_gaixinh(json) { //3
   }
 }
 function showrecentposts_khoahoc(json) { //4
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('khoahoc'); 
@@ -39,6 +42,7 @@ function showrecentposts_khoahoc(json) { //4
   }
 }
 function showrecentposts_thienvan(json) { //5
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('thienvan'); 
@@ -46,6 +50,7 @@ function showrecentposts_thienvan(json) { //5
   }
 }
 function showrecentposts_congnghe(json) { //6
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('congnghe'); 
@@ -53,6 +58,7 @@ function showrecentposts_congnghe(json) { //6
   }
 }
 function showrecentposts_didong(json) { //7
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('didong'); 
@@ -60,6 +66,7 @@ function showrecentposts_didong(json) { //7
   }
 }
 function showrecentposts_tinhoc(json) { //8
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('tinhoc'); 
@@ -67,6 +74,7 @@ function showrecentposts_tinhoc(json) { //8
   }
 }
 function showrecentposts_www(json) { //9
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('www'); 
@@ -74,6 +82,7 @@ function showrecentposts_www(json) { //9
   }
 }
 function showrecentposts_docnhat(json) { //10
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('docnhat'); 
@@ -81,6 +90,7 @@ function showrecentposts_docnhat(json) { //10
   }
 }
 function showrecentposts_suckhoe(json) { //11
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('suckhoe'); 
@@ -88,6 +98,7 @@ function showrecentposts_suckhoe(json) { //11
   }
 }
 function showrecentposts_doisong(json) { //12
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('doisong'); 
@@ -95,6 +106,7 @@ function showrecentposts_doisong(json) { //12
   }
 }
 function showrecentposts_anh(json) { //13
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('anh'); 
@@ -102,6 +114,7 @@ function showrecentposts_anh(json) { //13
   }
 }
 function showrecentposts_chuyenla(json) { //14
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('chuyenla'); 
@@ -109,6 +122,7 @@ function showrecentposts_chuyenla(json) { //14
   }
 }
 function showrecentposts_chuabiet(json) { //15
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('chuabiet'); 
@@ -116,6 +130,7 @@ function showrecentposts_chuabiet(json) { //15
   }
 }
 function showrecentposts_dulich(json) { //16
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('dulich'); 
@@ -123,6 +138,7 @@ function showrecentposts_dulich(json) { //16
   }
 }
 function showrecentposts_thucpham(json) { //17
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('thucpham'); 
@@ -130,6 +146,7 @@ function showrecentposts_thucpham(json) { //17
   }
 }
 function showrecentposts_thoitrang(json) { //18
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('thoitrang'); 
@@ -137,6 +154,7 @@ function showrecentposts_thoitrang(json) { //18
   }
 }
 function showrecentposts_cuocsong(json) { //19
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('cuocsong'); 
@@ -144,6 +162,7 @@ function showrecentposts_cuocsong(json) { //19
   }
 }
 function showrecentposts_yeu(json) { //20
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('yeu'); 
@@ -151,6 +170,7 @@ function showrecentposts_yeu(json) { //20
   }
 }
 function showrecentposts_cuoi(json) { //21
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('cuoi'); 
@@ -158,6 +178,7 @@ function showrecentposts_cuoi(json) { //21
   }
 }
 function showrecentposts_qua(json) { //22
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('qua'); 
@@ -165,6 +186,7 @@ function showrecentposts_qua(json) { //22
   }
 }
 function showrecentposts_cunghoangdao(json) { //23
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('cunghoangdao'); 
@@ -172,6 +194,7 @@ function showrecentposts_cunghoangdao(json) { //23
   }
 }
 function showrecentposts_congiap(json) { //24
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('congiap'); 
@@ -179,6 +202,7 @@ function showrecentposts_congiap(json) { //24
   }
 }
 function showrecentposts_doimat(json) { //25
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('doimat'); 
@@ -186,6 +210,7 @@ function showrecentposts_doimat(json) { //25
   }
 }
 function showrecentposts_giacngu(json) { //26
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('giacngu'); 
@@ -193,6 +218,7 @@ function showrecentposts_giacngu(json) { //26
   }
 }
 function showrecentposts_mattham(json) { //27
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('mattham'); 
@@ -200,6 +226,7 @@ function showrecentposts_mattham(json) { //27
   }
 }
 function showrecentposts_trinho(json) { //28
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('trinho'); 
@@ -207,6 +234,7 @@ function showrecentposts_trinho(json) { //28
   }
 }
 function showrecentposts_rang(json) { //29
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('rang'); 
@@ -214,6 +242,7 @@ function showrecentposts_rang(json) { //29
   }
 }
 function showrecentposts_mobung(json) { //30
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('mobung'); 
@@ -221,6 +250,7 @@ function showrecentposts_mobung(json) { //30
   }
 }
 function showrecentposts_da(json) { //31
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('da'); 
@@ -228,6 +258,7 @@ function showrecentposts_da(json) { //31
   }
 }
 function showrecentposts_tangcan(json) { //32
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('tangcan'); 
@@ -235,6 +266,7 @@ function showrecentposts_tangcan(json) { //32
   }
 }
 function showrecentposts_chieucao(json) { //33
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('chieucao'); 
@@ -242,6 +274,7 @@ function showrecentposts_chieucao(json) { //33
   }
 }
 function showrecentposts_daurang(json) { //34
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('daurang'); 
@@ -249,6 +282,7 @@ function showrecentposts_daurang(json) { //34
   }
 }
 function showrecentposts_cobap(json) { //35
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('cobap'); 
@@ -256,6 +290,7 @@ function showrecentposts_cobap(json) { //35
   }
 }
 function showrecentposts_cobung(json) { //36
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('cobung'); 
@@ -263,6 +298,7 @@ function showrecentposts_cobung(json) { //36
   }
 }
 function showrecentposts_songkhoe(json) { //37
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('songkhoe'); 
@@ -270,6 +306,7 @@ function showrecentposts_songkhoe(json) { //37
   }
 }
 function showrecentposts_giamcan(json) { //38
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('giamcan'); 
@@ -277,6 +314,7 @@ function showrecentposts_giamcan(json) { //38
   }
 }
 function showrecentposts_trimun(json) { //39
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('trimun'); 
@@ -284,6 +322,7 @@ function showrecentposts_trimun(json) { //39
   }
 }
 function showrecentposts_ungthu(json) { //40
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('ungthu'); 
@@ -291,6 +330,7 @@ function showrecentposts_ungthu(json) { //40
   }
 }
 function showrecentposts_caythuoc(json) { //41
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('caythuoc'); 
@@ -298,6 +338,7 @@ function showrecentposts_caythuoc(json) { //41
   }
 }
 function showrecentposts_songlau(json) { //42
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('songlau'); 
@@ -305,6 +346,7 @@ function showrecentposts_songlau(json) { //42
   }
 }
 function showrecentposts_laugia(json) { //43
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('laugia'); 
@@ -312,6 +354,7 @@ function showrecentposts_laugia(json) { //43
   }
 }
 function showrecentposts_hanhphuc(json) { //44
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('hanhphuc'); 
@@ -319,6 +362,7 @@ function showrecentposts_hanhphuc(json) { //44
   }
 }
 function showrecentposts_uongruou(json) { //45
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('uongruou'); 
@@ -326,6 +370,7 @@ function showrecentposts_uongruou(json) { //45
   }
 }
 function showrecentposts_gioitinh(json) { //46
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('gioitinh'); 
@@ -333,6 +378,7 @@ function showrecentposts_gioitinh(json) { //46
   }
 }
 function showrecentposts_truyen(json) { //47
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('truyen'); 
@@ -340,6 +386,7 @@ function showrecentposts_truyen(json) { //47
   }
 }
 function showrecentposts_ngon(json) { //48
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('ngon'); 
@@ -347,6 +394,7 @@ function showrecentposts_ngon(json) { //48
   }
 }
 function showrecentposts_muasamonline(json) { //49
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('muasamonline'); 
@@ -354,6 +402,7 @@ function showrecentposts_muasamonline(json) { //49
   }
 }
 function showrecentposts_dodilam(json) { //50
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('dodilam'); 
@@ -361,6 +410,7 @@ function showrecentposts_dodilam(json) { //50
   }
 }
 function showrecentposts_dodaopho(json) { //51
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('dodaopho'); 
@@ -368,6 +418,7 @@ function showrecentposts_dodaopho(json) { //51
   }
 }
 function showrecentposts_quanjean(json) { //52
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('quanjean'); 
@@ -375,6 +426,7 @@ function showrecentposts_quanjean(json) { //52
   }
 }
 function showrecentposts_tuixach(json) { //53
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('tuixach'); 
@@ -382,6 +434,7 @@ function showrecentposts_tuixach(json) { //53
   }
 }
 function showrecentposts_giay(json) { //54
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('giay'); 
@@ -389,6 +442,7 @@ function showrecentposts_giay(json) { //54
   }
 }
 function showrecentposts_aokhoac(json) { //55
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('aokhoac'); 
@@ -396,6 +450,7 @@ function showrecentposts_aokhoac(json) { //55
   }
 }
 function showrecentposts_vay(json) { //56
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('vay'); 
@@ -403,6 +458,7 @@ function showrecentposts_vay(json) { //56
   }
 }
 function showrecentposts_somi(json) { //57
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('somi'); 
@@ -410,6 +466,7 @@ function showrecentposts_somi(json) { //57
   }
 }
 function showrecentposts_hoctap(json) { //58
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('hoctap'); 
@@ -417,6 +474,7 @@ function showrecentposts_hoctap(json) { //58
   }
 }
 function showrecentposts_tienganh(json) { //59
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('tienganh'); 
@@ -424,6 +482,7 @@ function showrecentposts_tienganh(json) { //59
   }
 }
 function showrecentposts_lamgiau(json) { //60
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('lamgiau'); 
@@ -431,6 +490,7 @@ function showrecentposts_lamgiau(json) { //60
   }
 }
 function showrecentposts_kiemtien(json) { //61
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('kiemtien'); 
@@ -438,6 +498,7 @@ function showrecentposts_kiemtien(json) { //61
   }
 }
 function showrecentposts_vieclam(json) { //62
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('vieclam'); 
@@ -445,6 +506,7 @@ function showrecentposts_vieclam(json) { //62
   }
 }
 function showrecentposts_xe(json) { //63
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('xe'); 
@@ -452,6 +514,7 @@ function showrecentposts_xe(json) { //63
   }
 }
 function showrecentposts_nha(json) { //64
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('nha'); 
@@ -459,6 +522,7 @@ function showrecentposts_nha(json) { //64
   }
 }
 function showrecentposts_thietkeweb(json) { //65
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('thietkeweb'); 
@@ -466,6 +530,7 @@ function showrecentposts_thietkeweb(json) { //65
   }
 }
 function showrecentposts_face(json) { //66
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('face'); 
@@ -473,6 +538,7 @@ function showrecentposts_face(json) { //66
   }
 }
 function showrecentposts_game(json) { //67
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('game'); 
@@ -480,6 +546,7 @@ function showrecentposts_game(json) { //67
   }
 }
 function showrecentposts_hai(json) { //68
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('hai'); 
@@ -487,6 +554,7 @@ function showrecentposts_hai(json) { //68
   }
 }
 function showrecentposts_video(json) { //69
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('video'); 
@@ -494,6 +562,7 @@ function showrecentposts_video(json) { //69
   }
 }
 function showrecentposts_ngonnguanh(json) { //70
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('ngonnguanh'); 
@@ -501,6 +570,7 @@ function showrecentposts_ngonnguanh(json) { //70
   }
 }
 function showrecentposts_bestquotes365(json) { //71
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('bestquotes365'); 
@@ -508,6 +578,7 @@ function showrecentposts_bestquotes365(json) { //71
   }
 }
 function showrecentposts_coc(json) { //72
+  numposts = json.feed.entry.length;
   for (var i = 0; i < numposts; i++) {
     var posttitle = title_first_part(json,i);
     var container = document.getElementById('coc'); 
