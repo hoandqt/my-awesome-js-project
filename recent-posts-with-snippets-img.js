@@ -8,7 +8,7 @@ function showrecentposts_img_www(json) {
   for (var i = 0; i < numposts_img; i++) {
     var details = first_part(json,i);
     var container = document.getElementById('www-img'); 
-    last_part(details);
+    last_part(details,container);
   }
 }
 function first_part(json,i) {
@@ -40,7 +40,7 @@ function first_part(json,i) {
     var details = [item, posttitle, postcontent, readmorelink];
     return details;
 }
-function last_part(details) {
+function last_part(details,container) {
     var item = details[0]; 
     var posttitle = details[1]; 
     var postcontent = details[2]; 
