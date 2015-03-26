@@ -1,7 +1,7 @@
 // ----------------------------------------
 // SHOW RECENT POSTS 
 // ----------------------------------------
-function showrecentposts(json) {
+function showrecentposts(json,category) {
   for (var i = 0; i < numposts; i++) {
     var entry = json.feed.entry[i];
     var posttitle = entry.title.$t;
@@ -15,7 +15,7 @@ function showrecentposts(json) {
     }
     posttitle = posttitle.link(posturl);
     
-    var container = document.getElementById(cat); 
+    var container = document.getElementById(category); 
 
     var div = document.createElement("div");
     div.className = "bbrecpost2";
