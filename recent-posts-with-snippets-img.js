@@ -31,7 +31,7 @@ function showrecentposts_img(json) {
     } else var postcontent = "";
     var re = /<\S[^>]*>/g;
     postcontent = postcontent.replace(re, "");
-    var container = document.getElementById(''); 
+    var container = document.getElementById('www'); 
     var div1 = document.createElement("div");
     div1.className = "postw";
     var div2 = document.createElement("div");
