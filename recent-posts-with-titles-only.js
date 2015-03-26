@@ -21,5 +21,6 @@ function showrecentposts(json) {
     var span = document.createElement("span");
     span.innerHTML = posttitle;
     div.appendChild(span);
+    container.appendChild(div);
   }
 }
