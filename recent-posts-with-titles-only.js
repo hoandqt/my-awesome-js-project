@@ -19,7 +19,7 @@ function showrecentposts(json) {
     var div = document.createElement("div");
     div.className = "bbrecpost2";
     var span = document.createElement("span");
-    span.appendChild(posttitle);
+    span.innerHTML = posttitle;
     div.appendChild(span);
   }
 }
