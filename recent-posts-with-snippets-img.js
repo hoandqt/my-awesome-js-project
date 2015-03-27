@@ -12,6 +12,13 @@ function showrecentposts_img_www(json) {
     last_part(details,container);
   }
 }
+function showrecentposts_img_chuyenla(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    var details = first_part(json,i);
+    var container = document.getElementById('chuyenla-img'); 
+    last_part(details,container);
+  }
+}
 function showrecentposts_img_nha(json) {
   for (var i = 0; i < numposts_img; i++) {
     var details = first_part(json,i);
