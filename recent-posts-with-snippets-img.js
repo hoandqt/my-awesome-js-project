@@ -12,6 +12,69 @@ function showrecentposts_img_www(json) {
     last_part(details,container);
   }
 }
+function showrecentposts_img_nha(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    var details = first_part(json,i);
+    var container = document.getElementById('nha-img'); 
+    last_part(details,container);
+  }
+}
+function showrecentposts_img_xe(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    var details = first_part(json,i);
+    var container = document.getElementById('xe-img'); 
+    last_part(details,container);
+  }
+}
+function showrecentposts_img_songkhoe(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    var details = first_part(json,i);
+    var container = document.getElementById('songkhoe-img'); 
+    last_part(details,container);
+  }
+}
+function showrecentposts_img_kiemtien(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    var details = first_part(json,i);
+    var container = document.getElementById('kiemtien-img'); 
+    last_part(details,container);
+  }
+}
+function showrecentposts_img_tienganh(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    var details = first_part(json,i);
+    var container = document.getElementById('tienganh-img'); 
+    last_part(details,container);
+  }
+}
+function showrecentposts_img_hoctap(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    var details = first_part(json,i);
+    var container = document.getElementById('hoctap-img'); 
+    last_part(details,container);
+  }
+}
+function showrecentposts_img_lamgiau(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    var details = first_part(json,i);
+    var container = document.getElementById('lamgiau-img'); 
+    last_part(details,container);
+  }
+}
+function showrecentposts_img_ngon(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    var details = first_part(json,i);
+    var container = document.getElementById('ngon-img'); 
+    last_part(details,container);
+  }
+}
+function showrecentposts_img_gioitinh(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    var details = first_part(json,i);
+    var container = document.getElementById('gioitinh-img'); 
+    last_part(details,container);
+  }
+}
 function showrecentposts_img_thoitrang(json) {
   for (var i = 0; i < numposts_img; i++) {
     var details = first_part(json,i);
@@ -26,10 +89,17 @@ function showrecentposts_img_truyen(json) {
     last_part(details,container);
   }
 }
-function showrecentposts_img_chuyenla(json) {
+function showrecentposts_img_hai(json) {
   for (var i = 0; i < numposts_img; i++) {
     var details = first_part(json,i);
-    var container = document.getElementById('chuyenla-img'); 
+    var container = document.getElementById('hai-img'); 
+    last_part(details,container);
+  }
+}
+function showrecentposts_img_thoitrang(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    var details = first_part(json,i);
+    var container = document.getElementById('thoitrang-img'); 
     last_part(details,container);
   }
 }
