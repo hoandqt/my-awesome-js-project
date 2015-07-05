@@ -4,7 +4,13 @@
 // Mod by MyDigitalLemon | Edit by Hoa Dang Nguyen
 // Original by blogsolute.com | blogsudo.com
 // ----------------------------------------
-
+function showrecentposts_img_thienvan(json) {
+  for (var i = 0; i < numposts_img; i++) {
+    var details = first_part(json,i);
+    var container = document.getElementById('thienvan-img'); 
+    last_part(details,container);
+  }
+}
 function showrecentposts_img_www(json) {
   for (var i = 0; i < numposts_img; i++) {
     var details = first_part(json,i);
